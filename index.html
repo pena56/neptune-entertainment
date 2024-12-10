@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neptune Press</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Montserrat:wght@100;200;300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="show-transparent">
+      <div class="container navbar">
+        <button id="play-button-1" class="navbar-icon">
+          <img id="navbar-logo" src="./assets/images/logo.png" alt="" />
+          <p>Click to continue</p>
+        </button>
+
+        <div>
+          <ul>
+            <li>
+              <div class="coral-item">
+                <img id="navbar-coral" src="./assets/images/coral.svg" alt="" />
+                <button>
+                  <a id="homeLink" href="./index.html">
+                    <p>Home</p>
+                  </a>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="coral-item">
+                <img id="navbar-coral" src="./assets/images/coral.svg" alt="" />
+                <button>
+                  <a href="./scripts.html">
+                    <p>Scripts</p>
+                  </a>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="coral-item">
+                <img id="navbar-coral" src="./assets/images/coral.svg" alt="" />
+                <button>
+                  <a href="./about.html">
+                    <p>About Us</p>
+                  </a>
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="coral-item">
+            <img id="navbar-coral" src="./assets/images/coral.svg" alt="" />
+            <button>
+              <a href="./contact.html">
+                <p>Contact us</p>
+              </a>
+            </button>
+          </div>
+        </div>
+
+        <button class="hamburger">
+          <svg
+            id="hamburger"
+            width="40"
+            height="32"
+            viewBox="0 0 40 32"
+            fill="#FEFEFE"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="40" height="4" rx="2" />
+            <rect y="14" width="40" height="4" rx="2" />
+            <rect y="28" width="40" height="4" rx="2" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-navbar">
+        <div>
+          <div class="mobile-logo">
+            <img src="./assets/images/logo.png" alt="" />
+          </div>
+        </div>
+
+        <div>
+          <ul>
+            <li class="active">
+              <a href="./index.html"> Home </a>
+            </li>
+            <li>
+              <a href="./scripts.html"> Scripts </a>
+            </li>
+            <li>
+              <a href="./about.html"> About Us </a>
+            </li>
+          </ul>
+
+          <div>
+            <img src="./assets/images/coral.svg" alt="" />
+            <button>
+              <a href="./contact.html">
+                <p>Contact us</p>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar section -->
+
+    <!-- banner section -->
+    <div class="banner">
+      <video
+        id="revealLogo"
+        playsinline
+        muted
+        loop
+        poster="./assets/images/videoCover.jpg"
+      >
+        <source src="./assets/videos/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="banner-wrapper">
+        <!-- <p>Featured Scripts</p> -->
+        <div class="fade-left"></div>
+        <div class="container">
+          <div class="scripts-container-1">
+            <div class="scripts-container-group">
+              <div class="script-item">
+                <a href="./script.html"></a>
+                <img src="./assets/images/script.svg" alt="" />
+
+                <div>
+                  <p>TALL DARK AND HANDSOME</p>
+                </div>
+              </div>
+
+              <div class="script-item">
+                <a href="./script.html"></a>
+                <img src="./assets/images/script.svg" alt="" />
+
+                <div>
+                  <p>TALL DARK AND HANDSOME</p>
+                </div>
+              </div>
+
+              <div class="script-item">
+                <a href="./script.html"></a>
+                <img src="./assets/images/script.svg" alt="" />
+
+                <div>
+                  <p>TALL DARK AND HANDSOME</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scripts-container-seperator"></div>
+
+            <div class="scripts-container-group right">
+              <div class="script-item">
+                <a href="./script.html"></a>
+                <img src="./assets/images/script.svg" alt="" />
+
+                <div>
+                  <p>TALL DARK AND HANDSOME</p>
+                </div>
+              </div>
+
+              <div class="script-item">
+                <a href="./script.html"></a>
+                <img src="./assets/images/script.svg" alt="" />
+
+                <div>
+                  <p>TALL DARK AND HANDSOME</p>
+                </div>
+              </div>
+
+              <div class="script-item">
+                <a href="./script.html"></a>
+                <img src="./assets/images/script.svg" alt="" />
+
+                <div>
+                  <p>TALL DARK AND HANDSOME</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-right"></div>
+
+        <!-- <button id="play-button">Click here to continue</button> -->
+      </div>
+    </div>
+    <!-- end of banner section -->
+
+    <!-- coming soon section -->
+    <section class="bg-primary-blue-1">
+      <div class="container">
+        <div class="coming-soon">
+          <!-- <div class="header">
+            <p>Coming soon</p>
+          </div> -->
+
+          <div class="titles-container">
+            <div class="titles">
+              <div class="titles-list">
+                <a href="./saw.html" class="title">
+                  <img src="./assets/images/titles/1.png" alt="" />
+                  <span>Saw VI</span>
+                </a>
+                <a href="./prince.html" class="title">
+                  <img src="./assets/images/titles/2.png" alt="" />
+                  <span>Prince of Persia</span>
+                </a>
+                <a href="./liger.html" class="title">
+                  <img src="./assets/images/titles/3.png" alt="" />
+                  <span>Liger</span>
+                </a>
+                <a href="./free.html" class="title">
+                  <img src="./assets/images/titles/4.png" alt="" />
+                  <span>Free Guy</span>
+                </a>
+                <a href="./punisher.html" class="title">
+                  <img src="./assets/images/titles/5.png" alt="" />
+                  <span>The Punisher</span>
+                </a>
+                <a href="./punisher.html" class="title">
+                  <img src="./assets/images/titles/5.png" alt="" />
+                  <span>The Punisher</span>
+                </a>
+              </div>
+            </div>
+
+            <a class="indicators">
+              <button class="indicator left">
+                <img src="./assets/images/arrow-left.svg" alt="" />
+              </button>
+
+              <button class="indicator right">
+                <img src="./assets/images/arrow-right.svg" alt="" />
+              </button>
+            </a>
+
+            <p id="currentTitle">Liger</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of coming soon section -->
+
+    <!-- cinema showing section -->
+    <!-- <section class="bg-primary-blue-20">
+      <div class="container">
+        <div class="cinema-section">
+          <div class="header">
+            <p>Cinema Showing Our Movie</p>
+          </div>
+
+          <div class="cinema-soon">
+            <div class="cinema-location">
+              <h5>Cinema</h5>
+
+              <p>Genesis Cinema</p>
+
+              <h5>Location</h5>
+
+              <p>Queens</p>
+
+              <h5>Time</h5>
+
+              <div class="times">
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cinema-location">
+              <h5>Cinema</h5>
+
+              <p>Genesis Cinema</p>
+
+              <h5>Location</h5>
+
+              <p>Queens</p>
+
+              <h5>Time</h5>
+
+              <div class="times">
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cinema-location">
+              <h5>Cinema</h5>
+
+              <p>Genesis Cinema</p>
+
+              <h5>Location</h5>
+
+              <p>Queens</p>
+
+              <h5>Time</h5>
+
+              <div class="times">
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cinema-location">
+              <h5>Cinema</h5>
+
+              <p>Genesis Cinema</p>
+
+              <h5>Location</h5>
+
+              <p>Queens</p>
+
+              <h5>Time</h5>
+
+              <div class="times">
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cinema-location">
+              <h5>Cinema</h5>
+
+              <p>Genesis Cinema</p>
+
+              <h5>Location</h5>
+
+              <p>Queens</p>
+
+              <h5>Time</h5>
+
+              <div class="times">
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cinema-location">
+              <h5>Cinema</h5>
+
+              <p>Genesis Cinema</p>
+
+              <h5>Location</h5>
+
+              <p>Queens</p>
+
+              <h5>Time</h5>
+
+              <div class="times">
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+
+                <div>
+                  <p>11:12 pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- end of cinema showing section -->
+
+    <!-- footer section -->
+    <footer>
+      <!-- top section -->
+      <!-- <div class="bg-primary-light-blue">
+        <div class="container footer-top-section">
+          <div class="links-container">
+            <div class="logo-container">
+              <img src="./assets/images/logo.png" alt="" />
+
+              <p>Neptune Entertainment</p>
+            </div>
+
+            <div class="links-wrapper">
+              <div>
+                <p>Company</p>
+                <ul>
+                  <a href="./about.html">
+                    <li>About Us</li>
+                  </a>
+
+                  <a href="./contact.html">
+                    <li>Contact Us</li>
+                  </a>
+                </ul>
+              </div>
+
+              <div>
+                <p>Legal</p>
+                <ul>
+                  <a href="#">
+                    <li>Terms</li>
+                  </a>
+
+                  <a href="#">
+                    <li>Privacy</li>
+                  </a>
+                </ul>
+              </div>
+
+              <div>
+                <p>Help</p>
+                <ul>
+                  <a href="./contact.html">
+                    <li>Contact Us</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-container">
+            <div class="contact-wrapper">
+              <div class="contact-item">
+                <p>Contact us</p>
+                <p class="phone">+1 999 888-76-54</p>
+              </div>
+
+              <div class="contact-item">
+                <p>email</p>
+                <p>support@neptuneentertainment.com</p>
+              </div>
+
+              <div class="socials">
+                <p>Socials</p>
+
+                <div class="socials-container">
+                  <div class="socials-wrapper">
+                    <a href="#">
+                      <div class="social">
+                        <img src="./assets/images/facebook.svg" alt="" />
+                      </div>
+                    </a>
+
+                    <a href="#">
+                      <div class="social">
+                        <img src="./assets/images/x.svg" alt="" />
+                      </div>
+                    </a>
+
+                    <a href="#">
+                      <div class="social">
+                        <img src="./assets/images/instagram.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="socials-wrapper">
+                    <a href="#">
+                      <div class="social-outline">
+                        <img src="./assets/images/mail.svg" alt="" />
+                      </div>
+                    </a>
+
+                    <a href="#">
+                      <div class="social-outline">
+                        <img src="./assets/images/whatsapp.svg" alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <div>
+                <p>Stay updated with</p>
+                <p>Neptune Entertainment by signing up for our newsletter</p>
+              </div>
+
+              <div class="subscribe-form">
+                <input type="text" placeholder="Email Address" />
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- bottom section -->
+      <div class="bg-primary-blue">
+        <div class="container footer-bottom-section">
+          <p>© 2023 Neptune Entertainment, LLC all rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer section -->
+
+    <!-- js scripts -->
+    <script src="./script.js"></script>
+  </body>
+</html>

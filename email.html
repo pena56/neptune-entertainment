@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Neptune Press</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+      :root {
+        --info: #2f80ed;
+        --success: #27ae60;
+        --warning: #e2b93b;
+        --error: #eb5757;
+
+        --secondary-blue: #012168;
+        --secondary-green: #6bc048;
+
+        --primary-green: #43a750;
+        --primary-blue: #0f3443;
+
+        --black-1: #000000;
+        --black-2: #1d1d1d;
+        --black-3: #282828;
+
+        --white-1: #fafafa;
+
+        --gray-1: #333333;
+        --gray-2: #54595f;
+        --gray-3: #7a7a7a;
+        --gray-4: #abb8c3;
+        --gray-5: #f1f1f1;
+
+        --accent-1: #6bc048;
+        --accent-2: #00d082;
+        --accent-3: #7adcb4;
+        --accent-4: #8ed1fc;
+        --accent-5: #0693e3;
+        --accent-6: #f78da7;
+        --accent-7: #cf2e2e;
+        --accent-8: #ffccbb;
+        --accent-9: #ff6900;
+      }
+
+      html {
+        background-color: var(--gray-5);
+        font-size: calc(60% + 0.8vmin);
+      }
+
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--gray-3);
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 70rem;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--info);
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+      }
+
+      section {
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+
+      hr {
+        width: 80%;
+        border: none;
+        background-color: var(--gray-4);
+        height: 2px;
+      }
+
+      footer {
+        background-color: transparent;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .success {
+        color: var(--success);
+        font-weight: 700;
+      }
+
+      .danger {
+        color: var(--error);
+        font-weight: 700;
+      }
+
+      .btn {
+        text-transform: uppercase;
+        border: none;
+        padding: 0.5rem 3rem;
+        background-color: var(--primary-green);
+        border-radius: 8px;
+        color: var(--white-1);
+        font-weight: 500;
+        cursor: pointer;
+        width: fit-content;
+      }
+
+      .btn:hover {
+        color: var(--white-1);
+      }
+
+      .lg-divider {
+        height: 3px;
+        background-color: var(--primary-green);
+      }
+
+      .header-logo-1 {
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+      }
+
+      .header-logo-2 {
+        width: 7rem;
+        height: 2.7rem;
+        object-fit: contain;
+      }
+
+      .content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 0.8rem;
+      }
+
+      .content-center {
+        align-items: center;
+      }
+
+      .content-header {
+        align-items: flex-start;
+      }
+
+      .content-sub-header {
+        width: 100%;
+        text-align: left;
+      }
+
+      .content-title {
+        color: var(--primary-blue);
+      }
+
+      .content-subtitle {
+        color: var(--primary-blue);
+      }
+
+      .cover-image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .content-cover-image {
+        max-width: 80%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .imgs-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .store-img {
+        min-width: 7rem;
+        min-height: 3rem;
+        object-fit: contain;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      .sm-text {
+        font-size: 0.9rem;
+      }
+
+      .logo-header {
+        color: #134153;
+      }
+
+      /* @media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="header-logo-1" src="./assets/images/logo-dark.png" alt="" />
+      <h1 class="logo-header">Neptune Press</h1>
+      <!-- <img class="header-logo-2" src="./assets/images/logo-2.png" alt="" /> -->
+    </header>
+
+    <main>
+      <section>
+        <div class="content content-header">
+          <h1 class="content-title">
+            Debited #1,100.00 From your Flovest Wallet
+          </h1>
+          <p class="content-subtitle">Hi John Doe,</p>
+        </div>
+
+        <div class="cover-image-wrapper">
+          <img
+            class="content-cover-image"
+            src="./assets/images/cover.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <hr class="lg-divider" />
+
+      <section>
+        <div class="content">
+          <p>Your transfer from your Flovest Wallet was successfully.</p>
+          <p>
+            Details below <br />
+            Amount: <span class="danger">#1,100.00</span>
+          </p>
+          <p>
+            Memo: Transfer from John Doe [******8889] <br />
+            Transaction ID: 000013220613175205000268603138
+          </p>
+          <p>
+            Reference: FLC1306223ced677c49 <br />
+            Date: 21 Jun 2024 17:53:00
+          </p>
+          <p>Cheers.</p>
+        </div>
+      </section>
+
+      <hr />
+    </main>
+
+    <footer>
+      <div class="imgs-row">
+        <a href="#">
+          <img class="store-img" src="./assets/images/app-store.png" alt="" />
+        </a>
+        <a href="#">
+          <img class="store-img" src="./assets/images/play-store.png" alt="" />
+        </a>
+      </div>
+
+      <p class="center-text">
+        13, admalrity Lekki Express way. Lagos State, Nigeria
+      </p>
+
+      <p class="center-text sm-text">Terms of use and Privacy Policy.</p>
+    </footer>
+  </body>
+</html>
